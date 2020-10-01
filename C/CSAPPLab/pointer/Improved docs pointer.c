@@ -2,7 +2,7 @@
  * CSE 351 HW1 (Data Lab - Pointers)
  *
  * <Please put your name and userid here>
- *
+ *<Example:- john . Jonh@123
  * pointer.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
  *
@@ -14,24 +14,24 @@
  */
 int printf(const char *, ...);
 
-#if 0
+#if (0)
 /*
- * Instructions to Students:
+ * Instructions to Students:-
  *
  * STEP 1: Read the following instructions carefully.
  */
 
-You will provide your solution to this homework by
+•You will provide your solution to this homework by
 editing the collection of functions in this source file.
 
-INTEGER CODING RULES:
+INTEGER CODING RULES:-
 
   Replace the "return" statement in each function with one
   or more lines of C code that implements the function. Your code
-  must conform to the following style:
+  must conform to the following style:-
 
-  int Funct(arg1, arg2, ...) {
-      /* brief description of how your implementation works */
+  int Funct(arg1, arg2, ...) 
+   {   /* brief description of how your implementation works */
       int var1 = Expr1;
       ...
       int varM = ExprM;
@@ -50,11 +50,11 @@ INTEGER CODING RULES:
       operations - + * are allowed. For the last three, you may also
       use shifts (<<, >>), ~, ==, and ^.
 
-  Some of the problems restrict the set of allowed operators even further.
+  •Some of the problems restrict the set of allowed operators even further.
   Each "Expr" may consist of multiple operators. You are not restricted to
   one operator per line.
 
-  You are expressly forbidden to:
+  •You are expressly forbidden to:
   1. Use any control constructs such as if, do, while, for, switch, etc.
   2. Define or use any macros.
   3. Define any additional functions in this file.
@@ -62,7 +62,7 @@ INTEGER CODING RULES:
   5. Use any other operations, such as &&, ||, ?: or sizeof.
   6. Use any data type other than those already in the declarations provided.
 
-  You may assume that your machine:
+ •You may assume that your machine:
   1. Uses 2s complement, 32-bit representations of integers.
   2. Performs right shifts arithmetically.
   3. Has unpredictable behavior when shifting an integer by more
@@ -175,8 +175,8 @@ int withinArray(int * intArray, int size, int * ptr) {
  * turn 0 into 1 and vice versa) and the rest left unchanged. Consider
  * the indices of x to begin with the low-order bit numbered as 0.
  */
-int invert(int x, int p, int n) {
-  // TODO
+int invert(int x, int p, int n) 
+  { // TODO
     //mask has n '1'-bit in leftmost
     unsigned int mask = (1<<31) >> (n-1);
     //rightshift the n '1's to the rightmost, then leftshift by p
